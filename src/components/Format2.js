@@ -4,6 +4,7 @@ import { GrLocation } from 'react-icons/gr'
 import { BsGlobe } from 'react-icons/bs'
 import { TiTick } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
+import ReactStars from 'react-stars'
 import { useReactToPrint } from 'react-to-print'
 import StarRatings from 'react-star-ratings'
 export default function Format2({ data }) {
@@ -212,6 +213,14 @@ export default function Format2({ data }) {
                                     starDimension="40px"
                                     starSpacing="0px"
                                   /> */}
+                                  <ReactStars
+                                    count={5}
+                                    value={el.rating}
+                                    edit={false}
+                                    // onChange={(e) => ratingChanged(e, i)}
+                                    // size={24}
+                                    // color2={'#000'}
+                                  />
                                 </div>
                               </li>
                             </>

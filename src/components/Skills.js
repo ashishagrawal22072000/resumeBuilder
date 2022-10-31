@@ -98,6 +98,7 @@ export default function Skills({ formData, setFormData }) {
                 required
               ></textarea> */}
                     <select onChange={(e) => handleChange(e, i)}>
+                      <option>Select Skill</option>
                       {SkillsName.map((ele) => {
                         return (
                           <>
@@ -110,7 +111,7 @@ export default function Skills({ formData, setFormData }) {
                       count={5}
                       onChange={(e) => ratingChanged(e, i)}
                       // size={24}
-                      color2={'#ffd700'}
+                      // color2={'#000'}
                     />
                   </div>
                 </div>
